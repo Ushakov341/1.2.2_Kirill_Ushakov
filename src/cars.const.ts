@@ -3,10 +3,9 @@ export type Car = {
   model: string;
   year: number;
   price: number;
-  сurrency: 'BYN' | 'RUB' | 'CNY';
+  currency: 'BYN' | 'RUB' | 'CNY';
   color: Array<string>;
   isReserved: boolean;
-  key: number;
 };
 
 export const carsList: Array<Car> = [
@@ -15,17 +14,16 @@ export const carsList: Array<Car> = [
     model: 'Corolla',
     year: 2020,
     price: 20000,
-    сurrency: 'BYN',
+    currency: 'BYN',
     color: ['Красный', 'Синий', 'Серый', 'Белый'],
     isReserved: false,
-    key: 1,
   },
   {
     brand: 'Honda',
     model: 'Civic',
     year: 2018,
     price: 18000,
-    сurrency: 'RUB',
+    currency: 'RUB',
     color: ['Красный', 'Синий', 'Серый', 'Зелёный'],
     isReserved: true,
   },
@@ -34,7 +32,7 @@ export const carsList: Array<Car> = [
     model: 'Mustang',
     year: 2021,
     price: 25000,
-    сurrency: 'CNY',
+    currency: 'CNY',
     color: ['Красный', 'Оранжевый', 'Серый', 'Желтый'],
     isReserved: false,
   },
@@ -43,7 +41,7 @@ export const carsList: Array<Car> = [
     model: 'Camaro',
     year: 2019,
     price: 23000,
-    сurrency: 'RUB',
+    currency: 'RUB',
     color: ['Белый', 'Синий', 'Серый'],
     isReserved: false,
   },
@@ -52,7 +50,7 @@ export const carsList: Array<Car> = [
     model: 'Sentra',
     year: 2019,
     price: 18000,
-    сurrency: 'CNY',
+    currency: 'CNY',
     color: ['Красный', 'Фиолетовый', 'Серый'],
     isReserved: true,
   },
