@@ -1,5 +1,6 @@
 import React from 'react';
 import { carsList } from "../cars.const"
+import Button from './Button';
 
 function TableItem() {
     return (
@@ -14,11 +15,15 @@ function TableItem() {
                             <option key={i} value={c}>{c}</option>
                         ))}
                     </select>
-                    <button className="button">Забронировать</button>
+                    <Button disabled={car.isReserved} />
                 </div>
             ))}
+            
         </>
+        
     );
 }
+
+
 
 export default TableItem;
