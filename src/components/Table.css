@@ -11,9 +11,8 @@
 .tableRow {
     display: grid;
     grid-template-columns: repeat(5, 140px);
-    grid-template-rows: repeat(5, 40px);
+    grid-template-rows: repeat(5, auto);
     grid-gap: 10px;
-    
     white-space: nowrap;
 }
 
@@ -21,7 +20,4 @@
 display: flex;
 justify-content: center;
 align-items: center;
-}
-.colorSwitch {
-
 }

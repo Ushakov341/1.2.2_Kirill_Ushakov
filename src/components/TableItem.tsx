@@ -5,6 +5,7 @@ function TableItem() {
         <>
         {carsList.map((car)=>(
             <>
+            <div className="tableRow">
         <div className="brandCar">{car.brand} {car.model}</div>
         <div className="priceCar">{car.price} {car.сurrency}</div>
         <div className="yearCar">{car.year}</div>
@@ -12,6 +13,7 @@ function TableItem() {
             <option className='colorSwitch'></option>
         </select>
         <button className = 'button'>Забронировать</button>
+        </div>
             </>
         ))}
         
