@@ -1,10 +1,21 @@
-.table {
-display: grid;
-justify-items: center;
+.tableTitle {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-gap: 6px;
+
 }
 
-.tableTitle, .tableRow {
+
+.tableRow {
     display: grid;
-    grid-template-columns: max-content;
+    
+    grid-template-columns: repeat(5, 140px);
     grid-template-rows: repeat(5, auto);
+    grid-gap: 6px;
+    white-space: nowrap;
+}
+
+.colorSwitch {
+
 }

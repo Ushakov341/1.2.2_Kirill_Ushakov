@@ -9,10 +9,12 @@ function TableItem() {
         <div className="priceCar">{car.price} {car.сurrency}</div>
         <div className="yearCar">{car.year}</div>
         <select className="colorCar">
-            <option className='colorRed'></option>
+            <option className='colorSwitch'></option>
         </select>
+        <button className = 'button'>Забронировать</button>
             </>
         ))}
+        
         </>
     )
 }
