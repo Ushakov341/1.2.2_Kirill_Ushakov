@@ -1,0 +1,10 @@
+.table {
+display: grid;
+justify-items: center;
+}
+
+.tableTitle, .tableRow {
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: repeat(5, auto);
+}

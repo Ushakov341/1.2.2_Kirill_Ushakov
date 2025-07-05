@@ -9,7 +9,7 @@ function TableItem() {
         <div className="priceCar">{car.price} {car.сurrency}</div>
         <div className="yearCar">{car.year}</div>
         <select className="colorCar">
-            <option className='colorRed'>{car.color}</option>
+            <option className='colorRed'></option>
         </select>
             </>
         ))}
