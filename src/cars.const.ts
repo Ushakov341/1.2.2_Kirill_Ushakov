@@ -6,6 +6,7 @@ export type Car = {
   сurrency: 'BYN' | 'RUB' | 'CNY';
   color: Array<string>;
   isReserved: boolean;
+  key: number;
 };
 
 export const carsList: Array<Car> = [
@@ -17,6 +18,7 @@ export const carsList: Array<Car> = [
     сurrency: 'BYN',
     color: ['Красный', 'Синий', 'Серый', 'Белый'],
     isReserved: false,
+    key: 1,
   },
   {
     brand: 'Honda',

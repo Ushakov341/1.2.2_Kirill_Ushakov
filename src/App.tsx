@@ -14,7 +14,7 @@ function App() {
       <div className="order">Заказ</div>
     </div>
       <div className="tableRow">
-
+      <TableItem />
       </div>
 
     </>

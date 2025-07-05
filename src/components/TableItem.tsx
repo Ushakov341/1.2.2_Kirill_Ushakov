@@ -1,17 +1,18 @@
+import { carsList } from "../cars.const"
+
 function TableItem() {
     return (
         <>
-        <div className="brandCar">Toyota Corolla</div>
-        <div className="priceCar">2000 BYN</div>
-        <div className="yearCar">2010</div>
+        {carsList.map((car)=>(
+            <>
+        <div className="brandCar">{car.brand} {car.model}</div>
+        <div className="priceCar">{car.price} {car.сurrency}</div>
+        <div className="yearCar">{car.year}</div>
         <select className="colorCar">
-            <option className='colorRed'>Красный</option>
-            <option className='colorBlue'>Синий</option>
-            <option className='colorOrange'>Оранжевый</option>
-            <option className='colorWhite'>Белый</option>
-            <option className='colorGray'>Серый</option>
+            <option className='colorRed'>{car.color}</option>
         </select>
-        <button className = 'button'>Забронировать</button>
+            </>
+        ))}
         </>
     )
 }
